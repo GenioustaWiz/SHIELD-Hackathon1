@@ -6,6 +6,9 @@
 @import url("portfolio.css");
 @import url("cards.css");
 @import url("projects.css");
+@import url("why-us.css");
+@import url("team-section.css");
+@import url("contact-us.css");
 /*  ==========  ===================== */
 
 
@@ -26,7 +29,9 @@ section {
     display: grid;
     justify-items: center;
     margin-bottom: 20px;
+    padding: 0 20px;
 } 
+/* ========= UNIVERSAL CSS ====== */
 .section-headings{
     text-align: center;
     font-weight: 900;
@@ -36,7 +41,19 @@ img{
     filter: brightness(100%) contrast(80%) saturate(100%) blur(0px) hue-rotate(0deg);
     border-radius: 8px 8px 8px 8px;
 }
-
+.flex-container  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-item {
+    flex: 1;
+    min-width: 300px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+/* ============   END OF UNIVERSAL CSS ======== */
 .footer{
     text-align: center;
     font-weight: 800;

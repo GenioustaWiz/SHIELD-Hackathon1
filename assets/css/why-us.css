@@ -1,0 +1,65 @@
+
+.w-column1 .intro h4{
+    font-weight: 900;
+    text-align: center;
+    color: #eb9e10;
+}
+.w-column1 .intro h2{
+    text-align: center;
+    font-weight: 900;
+    font-size: 30px;
+    color: green;
+}
+.w-column1 .intro p{
+    font-size: 18px;
+    line-height: 1.8em;
+    text-align: center;
+}
+.w-column1 .features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+.w-column1 .features li{
+    min-width: 200px;
+}
+.w-column1 .features .icon{
+    font-weight: 900;
+}
+.w-column1 .button{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 40px;
+    padding: 0 20px 0 20px;
+    font-size: 20px;
+    font-weight: 800;
+    color: rgb(51 127 6);
+    background-color: rgba(69, 95, 69, 0.105);
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(178, 225, 11, 0.385);
+    cursor: pointer;
+    transition: background-color 0.3s ease, filter 0.3s ease;
+    text-decoration: none;
+  } 
+.w-column1 .button:hover{
+    background-color: green;
+    color: white;
+  }
+.w-column2.cards-container{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.w-column2 .card{
+    max-width: 200px;
+    margin: 0;
+    padding: 2px;
+}
+.w-column2 .card .icon{
+    color: green;
+    font-weight: 900;
+}
+.w-column2 .card h5{
+    color:#eb9e10;
+    font-weight: 900;
+}

@@ -1,0 +1,87 @@
+.form-section, .faq-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0 20px !important;
+}
+
+.section-title {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #eb9e10;;
+    font-weight: 900;
+}
+
+.section-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.form-section form{
+    width: 100%;
+}
+.quote-form input,
+.quote-form textarea,
+.quote-form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.quote-form button {
+    background-color: green;
+    border-radius: 30px;
+    height: 40px;
+    padding: 0 20px 0 20px;
+    font-size: 20px;
+    font-weight: 800;
+    color: rgb(246, 255, 252);
+    cursor: pointer;
+    transition: background-color 0.3s ease, filter 0.3s ease;
+}
+.quote-form button:hover {
+  background-color: #eb9e10;
+}
+.faq-title {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: green;
+}
+
+.accordion {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.accordion-item {
+    border-top: 1px solid #ddd;
+}
+
+.accordion-item:first-child {
+    border-top: none;
+}
+
+.accordion-header {
+    background-color: #f1f1f1;
+    padding: 15px;
+    cursor: pointer;
+    text-align: left;
+    border: none;
+    width: 100%;
+    outline: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.accordion-header:hover {
+    background-color: #ddd;
+}
+
+.accordion-content {
+    padding: 15px;
+    display: none;
+}

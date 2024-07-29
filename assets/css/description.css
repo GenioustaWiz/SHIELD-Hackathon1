@@ -1,0 +1,104 @@
+/* main{
+  height: 0;
+} */
+#about {
+  background-color: rgb(0 0 0 / 86%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  min-height: 80vh;
+}
+#about::before{
+  content: "";
+  position: absolute;
+  background-image: url('../images/description_page.jpeg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 80vh;
+  z-index: -1
+}
+
+.description{/* From https://css.glass */
+  background: rgba(255, 255, 255, 0.15);
+/* border-radius: 16px; */
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+border: 1px solid rgba(255, 255, 255, 0.27);
+ /* height: 100%;  */
+  /* margin-bottom: 50px; */
+}
+.des-p {
+    display: block;
+    align-items: center;
+    margin:0 auto;
+    padding-top: 0px;
+    padding: 20px;
+    }
+.des-p h1{
+  color: green;
+    font-size: 60px;
+    font-weight: bolder;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.des-p p{
+  color: #eb9e10;
+    font-size: 29px;
+    font-weight: bold;
+    line-height: 1.7em;
+    letter-spacing: 0;
+}
+.des-p button{
+  height: 40px;
+  padding: 0 20px 0 20px;
+  font-size: 20px;
+  font-weight: 800;
+  color: rgb(246, 255, 252);
+  cursor: pointer;
+  transition: background-color 0.3s ease, filter 0.3s ease;
+} 
+.des-button .a{
+  background-color: #eb9e10;
+  border-radius: 30px;
+  box-shadow: 0 0 15px rgba(178, 225, 11, 0.385);
+}
+.des-button .b{
+  background-color: green;
+  border-radius: 30px;
+  box-shadow: 0 0 15px rgba(79, 158, 15, 0.385);
+}
+.des-button .a:hover, .des-button .b:hover{
+  background-color: rgba(33, 41, 16, 0.516);
+}
+
+/* FOR SMALL SCREENS */
+@media (max-width: 700px) {
+  .des-p h1{
+    font-size: 40px;
+  }
+  .des-p p{
+      font-size: 24px;
+  }
+  .des-p button{
+    height: 40px;
+    padding: 0 20px 0 20px;
+    font-size: 15px;
+  }
+}
+/* FOR LARGE SCREENS */
+@media (min-width: 992px){
+    #description-page{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .des-p-p{
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+}    

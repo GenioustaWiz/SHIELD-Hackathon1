@@ -1,0 +1,102 @@
+#about-top{
+    position: relative;
+    top: -70px; /* Adjust this value to control the overlap */
+    width: 100%;
+    box-sizing: border-box;
+}
+.about-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-top .column1{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: #eb9e10;
+    padding: 10px 20px;
+    width: 45%;
+    height: 100%;
+    border-radius: 10px 0 0 10px ; /* Top-left, top-right, bottom-right, bottom-left */
+
+}
+.column1 h3{
+    font-weight: bold;
+    font-size: 30px;
+}
+.column1 h4{
+    color: green;
+}
+.column1 p{
+    color: white;
+    font-size: 17px;
+}
+.column1 .button{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0 20px 0 20px;
+    font-size: 20px;
+    font-weight: 800;
+    color: rgb(246, 255, 252);
+    background-color: green;
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(178, 225, 11, 0.385);
+    cursor: pointer;
+    transition: background-color 0.3s ease, filter 0.3s ease;
+    text-decoration: none;
+  } 
+.column1 .button i{
+    padding-left: 5px;
+}
+.column1 .button:hover{
+    background-color: rgba(33, 41, 16, 0.516);
+  }
+.about-top .column2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  /* Adjusting minimum width as needed */
+    gap: 5px;
+    width: 45%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 0 10px  10px 0; /* Top-left, top-right, bottom-right, bottom-left */
+
+}
+.column2 .counter{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    min-height: 200px;
+    border: 1px solid #979292;
+}
+.counter .counter-number{
+    font-size: 30px;
+    font-weight: bolder;
+    color: green;
+}
+/* FOR SMALL SCREENS */
+@media (max-width: 700px) {
+    
+}
+@media (max-width: 1107px) {
+    .about-top{
+        flex-direction: column;
+    }
+    .about-top .column1{
+    width: 80%;
+    border-radius: 10px 10px 0 0; /* Top-left, top-right, bottom-right, bottom-left */
+    }
+    .about-top .column2{
+    width: 80%;
+    border-radius: 0 0 10px 10px; /* Top-left, top-right, bottom-right, bottom-left */
+    }
+
+}
+
+/* FOR LARGE SCREENS */
+@media (min-width: 992px){
+    /* #about-top{
+        margin: 0 20px;
+    } */
+}

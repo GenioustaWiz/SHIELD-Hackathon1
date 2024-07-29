@@ -1,0 +1,32 @@
+
+  /* PROJECTS CODE */
+  #projects .flex-item img{
+    position: relative;
+    top: -50px; /* Adjust this value to control the overlap */
+    display: block;
+  }
+  #projects .flex-item{
+    padding: 0 30px 0 20px;
+  }
+  /* PROJECTS END */
+  
+  .card-button {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 30px;
+    padding: 0 10px 0 10px;
+    font-size: 20px;
+    font-weight: 800;
+    color: rgb(51 127 6);
+    background-color: rgba(0, 128, 0, 0.105);
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(178, 225, 11, 0.385);
+    cursor: pointer;
+    transition: background-color 0.3s ease, filter 0.3s ease;
+    text-decoration: none;
+  } 
+  .card-button:hover{
+    background-color: green;
+    color: white;
+  }

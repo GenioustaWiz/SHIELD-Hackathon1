@@ -1,0 +1,61 @@
+
+
+.what-we-do p{
+    display: flex;
+    justify-content: center;
+    padding: 50px 70px;
+    font-size: 17px;
+}
+.port.flex-container  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+.port .flex-item .image {
+    /* max-width: 400px; */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    max-height: 400px;
+  }
+.port .flex-item {
+    flex: 1;
+    min-width: 300px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+.port .flex-item img {
+    width: 100%;
+    height: auto;
+  }
+.port .flex-item .button{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 40px;
+    padding: 0 20px 0 20px;
+    font-size: 20px;
+    font-weight: 800;
+    color: rgb(51 127 6);
+    background-color: rgba(0, 128, 0, 0.105);
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(178, 225, 11, 0.385);
+    cursor: pointer;
+    transition: background-color 0.3s ease, filter 0.3s ease;
+    text-decoration: none;
+  } 
+  .port .flex-item .button:hover{
+    background-color: green;
+    color: white;
+  }
+/* FOR Large SCREENS */
+@media (min-width: 769px) {
+    
+}
+/* FOR SMAL SCREENs */
+@media (max-width: 768px) {
+.port .flex-item {
+    flex-basis: 100%;
+}
+}

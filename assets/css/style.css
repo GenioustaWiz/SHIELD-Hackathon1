@@ -1,6 +1,11 @@
 /* importing other CSS files */
 @import url("nav.css");
 @import url("top-footer.css");
+@import url("description.css");
+@import url("about-top.css");
+@import url("portfolio.css");
+@import url("cards.css");
+@import url("projects.css");
 /*  ==========  ===================== */
 
 
@@ -10,16 +15,26 @@ body {
     padding: 0;
     background-color: #daeef3;
     background-size: cover;
+    overflow-x: hidden;
 }
 
-main {
+/* main {
     padding: 20px;
-}
+} */
 
 section {
     display: grid;
     justify-items: center;
     margin-bottom: 20px;
+} 
+.section-headings{
+    text-align: center;
+    font-weight: 900;
+    font-size: 30px;
+}
+img{
+    filter: brightness(100%) contrast(80%) saturate(100%) blur(0px) hue-rotate(0deg);
+    border-radius: 8px 8px 8px 8px;
 }
 
 .footer{

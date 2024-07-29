@@ -25,15 +25,180 @@
         </nav>
     </header>
     <main>
-        <section id="about"></section>
+        <section id="about">
+            <div class="item2 des-p text-center container">
+                <div>
+                  <h1 id="typewriter"> 
+                    <!-- Fast, efficient and result Oriented -->
+                  </h1>
+                  <!-- ======Typing Script -->
+                  <script>
+                    // Get the heading text from Django context
+                    var headingText = "Oriented Technologies";
+                
+                    // Get the target element where the typewriter effect will be displayed
+                    var typewriterElement = document.getElementById('typewriter');
+                
+                    // Function to display the typewriter effect
+                    function typewriterEffect(text, i, speed) {
+                        if (i < text.length) {
+                            typewriterElement.innerHTML = text.substring(0, i + 1) + '<span class="wrap">|</span>';
+                            setTimeout(function () {
+                                typewriterEffect(text, i + 1, speed);
+                            }, speed);
+                        } else {
+                            // Pause for a certain duration at the end of the message
+                            setTimeout(function () {
+                                // Clear the typewriter effect
+                                typewriterElement.innerHTML = '';
+                                // Restart the typewriter effect after a delay
+                                setTimeout(function () {
+                                    typewriterEffect(text, 0, speed);
+                                }, 50); // Adjust the delay duration (in milliseconds) before restarting
+                            }, 4000); // Adjust the pause duration (in milliseconds) after the message ends
+                        }
+                    }
+                
+                    // Start the typewriter effect
+                    typewriterEffect(headingText, 0, 100); // Adjust the speed (in milliseconds) as needed
+                  </script> 
+                </div>
+                <div class="des-p-p home">
+                  <p>
+                     We Brand, We Develop, We Scale and We Boost, your business and technological ideas.
+                  </p>
+                </div>
+                <div class="des-button">
+                    <button class="a text-center book-button" type="submit">Our Services
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+                    </button>
+                    <button class="b text-center book-button" type="submit">Contact Us 
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="about-top">
+            <div class="about-top">
+                <div class="column1">
+                    <h3>Build Your Dream Business ONLINE.</h3>
+                    <h4>We leverage cutting-edge technologies to drive business growth globally.</h4>
+                    <p>We Discover, Define, Design, Develop, Deploy and Deliver quality information, software and services to BRAND and BOOST your business ONLINE.</p>
+                    <a class="button" href="#">Work With Us
+                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="column2">
+                    <div class="counter">
+                        <div class="counter-number">263+</div>
+                        <div class="counter-title">Projects Completed</div>
+                        
+                    </div>
+                    <div class="counter">
+                        <div class="counter-number">6+</div>
+                        <div class="counter-title">Years of Experience</div>
+                        
+                    </div>
+                    <div class="counter">
+                        <div class="counter-number">162+</div>
+                        <div class="counter-title">Happy Customers</div>
+                        
+                    </div>
+                    <div class="counter">
+                        <div class="counter-number">153+</div>
+                        <div class="counter-title">Ranking Articles</div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <section id="portfolio"></section>
+        <section id="portfolio">
+            <div class="what-we-do">
+                <h2 class="section-headings heading">Our Services</h2>
+                <p class="desc">We provide comprehensive digital solutions to help businesses thrive in the online marketplace.</p>
+              </div>
+            
+              <div class="port flex-container web-development">
+                    <div class="flex-item">
+                        <img class="image" src="./assets/images/app1.jpeg" alt="Web Development">
+                    </div>
+                    <div class="flex-item">
+                        <h3 class="title">Web Development</h3>
+                        <p class="desc">Our team specializes in creating dynamic and responsive websites tailored to your business needs.</p>
+                        <a class="button" href="#">Discover More</a>
+                    </div>
+              </div>
+            
+              <div class="port flex-container  web-design">
+                <div class="flex-item">
+                    <img class="image"src="./assets/images/app2.jpeg" alt="Web Design">
+                </div>
+                <div class="flex-item">
+                    <h3 class="title">Web Design</h3>
+                    <p class="desc">We design visually appealing and user-friendly websites that enhance user experience and engagement.</p>
+                    <a class="button" href="#">Explore Services</a>
+                </div>
+              </div>
+            
+              <div class="port flex-container  digital-marketing">
+                <div class="flex-item">
+                    <img class="image" src="./assets/images/see.jpeg" alt="Digital Marketing">
+                </div>
+                <div class="flex-item">
+                    <h3 class="title">Digital Marketing</h3>
+                    <p class="desc">Our marketing strategies are designed to increase your online presence and drive targeted traffic to your site.</p>
+                    <a class="button" href="#">Learn More</a>
+                </div>
+              </div>
+        </section>
 
-        <section id="skills"></section>
+        <section id="projects" class="w-cards">
+            <h2 class="section-headings">Our Projects</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="flex-item">
+                        <img src="./assets/images/expense_app.jpeg" alt="Project 1 screenshot">
+                    </div>
+                    <div class="flex-item">
+                        <h3>Blum_Auto_tap</h3>
+                        <p>The projects makes use of Python, and several module 
+                            to automate the tapping of the screen and maximize 
+                            earning in a crypto game.</p>
+                        <a class="card-button" href="https://www.example.com/project1">Live Demo</a>
+                        <a class="card-button" href="https://github.com/GenioustaWiz/blum-bot-main">Repository</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="flex-item">
+                        <img src="./assets/images/expense_app.jpeg" alt="Project 1 screenshot">
+                    </div>
+                    <div class="flex-item">
+                        <h3>Blum_Auto_tap</h3>
+                        <p>The projects makes use of Python, and several module 
+                            to automate the tapping of the screen and maximize 
+                            earning in a crypto game.</p>
+                        <a class="card-button" href="https://www.example.com/project1">Live Demo</a>
+                        <a class="card-button" href="https://github.com/GenioustaWiz/blum-bot-main">Repository</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="flex-item">
+                        <img src="./assets/images/expense_app.jpeg" alt="Project 1 screenshot">
+                    </div>
+                    <div class="flex-item">
+                        <h3>Blum_Auto_tap</h3>
+                        <p>The projects makes use of Python, and several module 
+                            to automate the tapping of the screen and maximize 
+                            earning in a crypto game.</p>
+                        <a class="card-button" href="https://www.example.com/project1">Live Demo</a>
+                        <a class="card-button" href="https://github.com/GenioustaWiz/blum-bot-main">Repository</a>
+                    </div>
+                </div>
+            </div>
+            
 
-        <section id="experience"></section>
-
-        <section id="education"></section>
+        </section>
 
         <section id="contact"></section>
 
